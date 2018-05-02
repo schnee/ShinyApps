@@ -4,7 +4,7 @@ suppressPackageStartupMessages(library(ggplot2))
 
 # ui.R
 shinyUI(navbarPage(
-  "The Un-Official HomeAway ABn Experiment Explorer",
+  "The Un-Official ABn Experiment Explorer",
   tabPanel("Design",
            sidebarLayout(
              sidebarPanel(
