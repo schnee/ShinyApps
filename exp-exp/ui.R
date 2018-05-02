@@ -70,7 +70,7 @@ shinyUI(navbarPage(
                A trials than B trials (as well as successes)"),
              a(href="https://github.wvrgroup.internal/bschneeman/ShinyApps/tree/master/exp-exp", "Github.wvrgroup"),
              br(),
-             a(href="mailto:brent@homeaway.com?subject=Experiment Explorer Help", "Brent Schneeman")
+             a(href="mailto:schneeman@gmail.com?subject=Experiment Explorer Help", "Brent Schneeman")
            )
   )
 )
