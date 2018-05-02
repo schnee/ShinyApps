@@ -68,7 +68,7 @@ shinyUI(navbarPage(
                beat the A variant. The graph shows the long-term Bayesian estimates of the distribution of the conversion
                rates. It is instructive to enter numbers for other-than-50/50 experiments - what happens if there are 10x more
                A trials than B trials (as well as successes)"),
-             a(href="https://github.wvrgroup.internal/bschneeman/ShinyApps/tree/master/exp-exp", "Github.wvrgroup"),
+             a(href="https://github.com/schnee/ShinyApps/tree/master/exp-exp", "Github.com"),
              br(),
              a(href="mailto:schneeman@gmail.com?subject=Experiment Explorer Help", "Brent Schneeman")
            )

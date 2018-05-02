@@ -6,6 +6,7 @@ library(dplyr)
 library(broom)
 library(tidyr)
 library(fitdistrplus)
+library(scales)
 
 
 source("./prob-b-beats-a.R")
