@@ -80,12 +80,6 @@ get_limits_df <- function(df_eb) {
 # plot and annotate a bayesian prediction
 bayesian_density_plot = function(control_successes, control_trials, variant_successes, variant_trials){
 
-  #taken from 20150327-VRBO_ConversionSort_v1.xlsx (via Guillaume De Benaze)
-  #control_successes = 79825
-  #control_trials = 1786263
-  #variant_successes = 79625
-  #variant_trials = 1778331
-  
   df_eb <- get_bayes_density_df(control_trials, variant_trials, control_successes, variant_successes)
   
   # find the 99% range, for control and variant
