@@ -34,10 +34,10 @@ shinyUI(navbarPage(
                a(href="http://www.evanmiller.org/bayesian-ab-testing.html", "See here for details"),
                helpText("Calculates the long-term Bayesian probability that the Variant would beat",
                         "the Control"),
-               numericInput("successes_a", value=798,"Control Successes"),
-               numericInput("visits_a", value=17862,"Control Trials"),
-               numericInput("successes_b", value=796,"Variant Successes"),
-               numericInput("visits_b", value=17783,"Variant Trials"),
+               numericInput("successes_a", value=700,"Control Successes"),
+               numericInput("visits_a", value=10000,"Control Trials"),
+               numericInput("successes_b", value=750,"Variant Successes"),
+               numericInput("visits_b", value=10000,"Variant Trials"),
                br(),
                actionButton("probButton", "Estimate"),
                br(),
@@ -48,9 +48,9 @@ shinyUI(navbarPage(
              mainPanel(
                textOutput("o_text"),
                helpText("Below are the Bayesian estimates of the long-term conversion rates"),
-               plotOutput("bayesPlot"),
+               plotOutput("bayesPlot", height = "300px"),
                helpText("The Joint Probability Density Plot helps visualize the probability of the winning variant. If the probability cloud is centered on the black line, then the probability of either being the winner is 50%"),
-               plotOutput("bayesJointPlot")
+               plotOutput("bayesJointPlot", height = "300px", width = "300px")
              )
            )
   ),

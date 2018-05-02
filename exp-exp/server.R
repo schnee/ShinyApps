@@ -154,8 +154,8 @@ shinyServer(function(input, output, session) {
   output$o_text = renderText({
     paste("At ",
           input$visits_b,
-          " trials the probability of B beating A is ",
-          probFn())
+          " trials the probability of Variant beating Control is ",
+          round(probFn() * 100.0, digits = 4))
   })
   
   df_ebFN <- reactive({

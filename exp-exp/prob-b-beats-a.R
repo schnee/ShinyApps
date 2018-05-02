@@ -101,7 +101,8 @@ bayesian_density_plot2 = function(df_eb, minmax_df){
   
   p <-  df_eb %>% filter(x >= min(minmax_df$min)) %>% filter(x <= max(minmax_df$max)) %>%
     ggplot(aes(x, density, color = name)) +
-    geom_line() + theme_few() +
+    scale_color_manual(values = c("#0079FF","#A41EDC")) +
+    geom_line(size = 2) + theme_few() +
     labs(x = "Rate", color = "") 
   
   
@@ -127,7 +128,7 @@ bayesian_joint_plot = function(df_eb, minmax_df){
     ggplot(aes(a_x, b_x, fill = joint)) +
     geom_tile() +
     geom_abline() +
-    scale_fill_gradient2(low = "white", high = "red") +
+    scale_fill_gradient2(low = "white", high = "#15B874") +
     labs(x = "Control Density",
          y = "Variant Density",
          fill = "Joint density") + theme_few() +
