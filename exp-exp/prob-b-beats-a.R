@@ -55,7 +55,7 @@ get_bayes_density_df <- function(control_successes, control_trials, variant_succ
   max_ave <- max(df_eb$average)
   
   df_eb <- df_eb %>%
-    inflate(x = seq(0.99*min_ave, 1.01*max_ave, (max_ave - min_ave)/1000)) %>%
+    crossing(x = seq(0.99*min_ave, 1.01*max_ave, (max_ave - min_ave)/1000)) %>%
     mutate(density = dbeta(x, alpha1, beta1))
   
   df_eb
